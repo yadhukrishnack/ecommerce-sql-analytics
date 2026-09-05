@@ -31,8 +31,7 @@ payments  (payment_id PK, order_id FK -> orders)
 The `order_items` table lets a single order contain multiple products with quantities —
 needed to accurately calculate revenue, units sold, and top products.
 
-*(Add your ER diagram screenshot here — export one from MySQL Workbench's
-Database > Reverse Engineer, or draw one in draw.io / dbdiagram.io)*
+
 
 ## Repository Structure
 ```
@@ -103,8 +102,6 @@ JOIN payments pay ON o.order_id = pay.order_id
 GROUP BY sales_month;
 ```
 
-*(Paste 2-3 screenshots of your actual query results here after running them in
-MySQL Workbench — recruiters skim visuals faster than code.)*
 
 ## What I Learned
 Practiced designing a normalized relational schema from scratch (including a
